@@ -27,7 +27,7 @@
     </header>
 
     <main class="container">
-        <h2>Integarntes Del Equipo</h2>
+        <h2>Integrantes Del Equipo</h2>
         
         <div class="tabla-scroll">
             <table id="tabla" >
@@ -47,6 +47,7 @@
         </div>
     </main>
 
+    <!--modal agregar-->
     <dialog id="modalAgregar">
         <article>
             <header>
@@ -57,6 +58,25 @@
                 <input type="text" id="apellido" placeholder="Apellido" required>
                 <input type="email" id="email" placeholder="Correo electrónico" required>
                 <input type="number" placeholder="Edad" id="edad" required>
+                <button type="submit" class="contrast">Guardar</button>
+                </form>
+            </header>
+        </article>
+    </dialog>
+
+    <!-- modal editar-->
+     
+    <dialog id="modalEditar">
+        <article>
+            <header>
+                <a href="#" class="close" id="btnCerrarEditar"></a>
+                <h3>Editar Integrante</h3>
+                <form id="frmAEditarIntegranteS">
+                <input type="hidden" id="IdEditar">
+                <input type="text" id="nombreEditar" placeholder="Nombre" required>
+                <input type="text" id="apellidoEditar" placeholder="Apellido" required>
+                <input type="email" id="emailEditar" placeholder="Correo electrónico" required>
+                <input type="number" placeholder="Edad" id="edadEditar" required>
                 <button type="submit" class="contrast">Guardar</button>
                 </form>
             </header>
